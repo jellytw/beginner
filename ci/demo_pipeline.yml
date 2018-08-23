@@ -8,5 +8,6 @@ jobs:
   - name: Run tests
     plan:
       - get: beginner
+        trigger: true
       - task: run the palindrome logic
         file: beginner/ci/tasks/run_tests.yml
