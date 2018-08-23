@@ -3,4 +3,5 @@
 set -e -u -x
 
 cd beginner
-echo "racecar" | python palindrome.py 
+python --version
+echo "racecar" | python palindrome.py
