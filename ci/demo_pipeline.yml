@@ -1,0 +1,12 @@
+resources:
+  - name: beginner
+    type: git
+    source: &repo-source
+      uri: https://github.com/jellytw/beginner.git
+      branch: master
+jobs:
+  - name: Run tests
+    plan:
+      - get: beginner
+      - task: run the palindrome logic
+        file: beginner/ci/tasks/run_tests.yml
